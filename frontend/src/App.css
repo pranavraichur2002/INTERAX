@@ -1,0 +1,588 @@
+* {
+  font-family: "Manrope", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  line-height: 135%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: rgb(241, 238, 238);
+}
+
+.contentWrapper {
+  padding: 0em;
+  min-height: 80vh;
+}
+
+.loginContainer {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: rgb(244, 252, 255);
+  width: fit-content;
+  padding: 0 2em;
+  box-shadow: rgb(59, 59, 59) 0.1em 0.05em 0.4em;
+}
+
+.userInfoContainer {
+  min-height: 85vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.userInfoText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeContentContainer {
+  margin: 0 auto;
+  background-color: rgb(244, 252, 255);
+  width: 70vw;
+  max-width: 35em;
+  padding: 1.25em;
+  padding-bottom: 0.25em;
+  box-shadow: rgb(59, 59, 59) 0.1em 0.05em 0.4em;
+}
+
+.getStartedLink {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.getStartedLink:hover {
+  cursor: pointer;
+  color: #4549b7;
+}
+
+.loggedInAsTextContainer {
+  border: 1px solid blue;
+  border-radius: 0.2em;
+  background-color: rgb(17, 82, 221);
+  display: flex;
+  justify-content: center;
+  margin: 0.8em 0.2em;
+  color: white;
+  transition: all 0.2s;
+  padding: 0.1em;
+}
+
+.loggedInAsTextContainer:hover {
+  cursor: pointer;
+  color: blue;
+  background-color: white;
+  box-shadow: rgb(168, 168, 168) 0.2em 0.1em 0.2em;
+}
+
+.loggedInAsText {
+  font-size: 0.85rem;
+}
+
+.homePageTitle {
+  margin: 0em;
+  padding: 0em;
+}
+
+.slideInLeft {
+  animation-name: slide-in-left-with-delay;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.slideInRightMoreDelay {
+  animation-name: slide-in-right-with-delay;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+.slideInLeftDelay2 {
+  animation-name: slide-in-left-with-delay2;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+}
+
+.slideInRight {
+  animation-name: slide-in-right;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0%;
+  }
+
+  10% {
+    transform: translateX(-10%);
+    opacity: 0%;
+  }
+
+  100% {
+    color: black;
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-in-right-with-delay {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0%;
+  }
+
+  70% {
+    transform: translateX(-10%);
+    opacity: 0%;
+  }
+
+  100% {
+    color: black;
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-in-left-with-delay2 {
+  0% {
+    transform: translateX(10%);
+    opacity: 0%;
+  }
+
+  80% {
+    transform: translateX(10%);
+    opacity: 0%;
+  }
+
+  100% {
+    color: black;
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-in-left-with-delay {
+  0% {
+    transform: translateX(10%);
+    opacity: 0%;
+  }
+  50% {
+    transform: translateX(10%);
+    opacity: 0%;
+  }
+  100% {
+    color: black;
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+.homePageContent {
+  font-size: 1.1rem;
+  padding: 0.5em;
+}
+
+.backgroundContainer {
+  min-height: 85vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background: url("../public/bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.linearProgressContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 0.4em;
+  max-height: 0.4em;
+  padding: 0em 0;
+  background-color: rgb(241, 238, 238);
+}
+.linearProgressLoginContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 0.5em;
+  max-height: 0.5em;
+  width: 100%;
+  height: 10em;
+  padding: 0em 0;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.navbarList {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: rgb(113, 113, 237);
+  list-style: none;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 0;
+  box-shadow: grey 0.1em 0.05em 0.4em;
+}
+.navbarLink {
+  margin: 0.2em 1vw;
+}
+.navbarLinksWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.logo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  align-self: center;
+  text-align: center;
+  padding: 0 0.2em;
+  transition: all 0.4s;
+}
+
+.logo:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.categoriesWrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 0em;
+}
+
+.category {
+  color: rgb(92, 92, 255);
+  transition: all 0.4s;
+  padding: 0.4em;
+  margin: 0.4em;
+  border: 1px solid blue;
+  box-shadow: blue 0.1em 0.05em 0.1em;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.forumWrapper {
+  padding: 0.5em;
+  padding-top: 0;
+  margin: 0em;
+}
+
+.selectedCategory {
+  color: white;
+  background-color: rgb(48, 87, 228);
+}
+
+.postsWrapper {
+  padding: 0.5em;
+  margin: 0.4em auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  border: 1px solid black;
+  background-color: rgb(244, 244, 255);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+.title {
+  margin: 0em;
+}
+
+.titleWrapper {
+  margin: 1em;
+  text-transform: uppercase;
+}
+
+.time {
+  margin-left: 0;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.bodyWrapper {
+  border: 1px solid black;
+  margin: 1em;
+  padding: 0 0.5em;
+  overflow-x: auto;
+  font-size: 0.85em;
+  background-color: rgb(242, 242, 255);
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.emailWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.2em;
+  padding: 0 0.5em;
+}
+
+.answersWrapper {
+  margin: 0.4em 1em;
+  border: 1px solid black;
+  background-color: rgb(242, 242, 255);
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 9.5em;
+}
+
+.answerWrapper {
+  padding: 0.1em 0.5em;
+  font-size: 0.9rem;
+  overflow-x: auto;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+p {
+  font-size: 0.8rem;
+  padding: 0.1em;
+  margin: 0.2em;
+}
+
+.postWrapper {
+  border: 1px solid black;
+  margin: 0.5em 0;
+  padding: 0em;
+  background-color: #cbccfd;
+  transition: all 0.4s;
+  animation-name: onloadPostWrapper;
+  animation-iteration-count: 1;
+  animation-duration: 0.8s;
+}
+
+.postWrapper:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgb(202, 202, 202);
+}
+
+@keyframes onloadPostWrapper {
+  0% {
+    transform: translateY(-10em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+
+.answerButtonWrapper {
+  display: flex;
+  float: right;
+}
+
+.modalCloseButtonWrapper {
+  display: flex;
+  justify-content: right;
+}
+
+.modalPostButtonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.modalAnswerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  height: 3em;
+  width: fit-content;
+  margin: 1em;
+  padding: 0.2em;
+  background-color: rgb(108, 108, 248);
+  color: white;
+  transition: all 0.2s;
+  border: 1px solid rgb(115, 115, 255);
+  box-shadow: rgb(108, 108, 248) 0.2em 0.1em 0.4em;
+}
+
+.button:hover {
+  background-color: rgb(231, 231, 253);
+  color: rgb(120, 120, 255);
+  cursor: pointer;
+  border-radius: 0.2em;
+  margin: 1em;
+}
+
+.buttonText {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0.2em;
+}
+
+.drawerListWrapper {
+  background-color: rgb(189, 189, 255);
+}
+
+.drawerLinks {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding: 1em;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 0em;
+}
+
+.drawer {
+}
+
+.drawer:hover {
+  transform: rotate(90deg);
+}
+
+.drawerLink {
+  font-size: 1.2rem;
+  margin: 1em;
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.link2 {
+  color: rgb(237, 237, 254);
+  margin: 0 0.2em;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.link2:hover {
+  color: black;
+}
+
+.link:hover {
+  color: white;
+}
+
+.heading {
+  margin: 0;
+}
+
+.headingWrapper {
+  display: flex;
+  justify-content: left;
+}
+
+.headingDrawerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.anonymousCheckboxWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.stayAnonymousText {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1.1em;
+}
+
+.linktext {
+  display: inline;
+  font-size: 0.8rem;
+}
+
+.askedInCat {
+  font-size: 0.7rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.upvoteButton {
+  width: 4em;
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5em;
+  justify-content: space-evenly;
+}
+
+.upvotesText {
+  font-size: 1rem;
+}
+
+.upvotedButton {
+  height: 3em;
+  width: 4em;
+  margin: 1em;
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: rgb(231, 231, 253);
+  color: rgb(120, 120, 255);
+  transition: all 0.2s;
+  border: 1px solid rgb(115, 115, 255);
+  box-shadow: rgb(108, 108, 248) 0.2em 0.1em 0.4em;
+}
+
+.upvoteButton:hover {
+  background-color: rgb(231, 231, 253);
+  color: rgb(120, 120, 255);
+  cursor: pointer;
+  border-radius: 0.2em;
+  margin: 1em;
+}
+
+.footerText {
+  margin: 0.1em;
+  padding: 0.1em;
+}
+
+.footer {
+  min-height: 10vh;
+  background-color: #4549b7;
+  color: white;
+  margin: 0;
+  padding: 0.2em;
+}
